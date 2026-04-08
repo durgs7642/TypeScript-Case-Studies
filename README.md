@@ -102,7 +102,7 @@ It helps developers build **large, scalable, and maintainable applications**.
 ```ts
 let message: string = "Hello, World!";
 console.log(message);
-
+---
 
 # 📘 Case Study 2: Basic Syntax in TypeScript
 
