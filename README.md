@@ -1,3 +1,4 @@
+Case study 1
 Introduction to Typescript
 Learn about Typescript
 
