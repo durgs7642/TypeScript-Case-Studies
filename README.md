@@ -181,7 +181,7 @@ let message: string = "Hello World";
 console.log(message);
 ```
 
-# 📘 Variables in TypeScript
+# 📘Case Study 3: Variables in TypeScript
 
 Learn how to declare, use, and manage variables in TypeScript effectively.
 
