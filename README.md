@@ -179,3 +179,88 @@ A TypeScript program includes:
 ```ts
 let message: string = "Hello World";
 console.log(message);
+```
+
+# 📘 Variables in TypeScript
+
+Learn how to declare, use, and manage variables in TypeScript effectively.
+
+---
+
+## 📌 1. Problem Statement
+
+Imagine you're developing a software system for a large company.
+
+You need to store data like names, scores, and settings in a way that is:
+- Clear
+- Safe
+- Organized
+
+Every piece of information must:
+- Have a name
+- Occupy a place in memory
+
+### ❓ Challenge
+How do you manage variables in TypeScript so your code is:
+- Robust
+- Readable
+- Error-free?
+
+---
+
+## 🎯 2. Learning Objectives
+
+By the end of this lesson, you will:
+
+- Understand how to declare and use variables
+- Apply naming rules and best practices
+- Use type annotations and type inference
+- Understand variable scope (global, class, local)
+- Use type assertions
+- Understand strong typing
+
+---
+
+## 🧠 3. Concept (Analogy)
+
+### 🗂️ Labeled Drawers in an Office
+
+Think of variables like labeled drawers:
+
+- Each drawer has a **name (label)** and stores **specific data**
+- Rules must be followed for labeling
+- Some drawers are:
+  - **Global** → accessible everywhere
+  - **Local** → accessible only in certain areas
+  - **Class-based** → belong to specific objects
+
+👉 Proper organization prevents confusion and bugs.
+
+---
+
+## ⚙️ 4. Technical Deep Dive
+
+### ✅ Naming Rules
+
+- Can include: letters, numbers, `_`, `$`
+- Cannot:
+  - Start with a number
+  - Contain spaces
+  - Use special characters
+  - Use reserved keywords
+- Case-sensitive
+
+| Valid       | Invalid     |
+|------------|------------|
+| firstName  | first name |
+| first_name | 1number    |
+| num1       | first-name |
+| $result    | Var        |
+
+---
+
+### 📝 Variable Declaration
+
+#### 1. Type + Value
+```ts
+var name: string = "mary";
