@@ -748,17 +748,19 @@ Explicitly assigned to a variable to show it is intentionally empty.
 TypeScript treats null as its own type.
 
 Example:
-
+```ts
 let a: null = null;
 console.log(a); // Output: null
 console.log(typeof a); // Output: object
-Reinitializing with null:
-
+```
+ ###### Reinitializing with null:
+```ts
 let age: number | null = null;
 console.log(age); // null
 age = 28;
 console.log(age); // 28
-What is undefined?
+```
+###### What is undefined?
 undefined means a variable has been declared but not assigned a value.
 
 TypeScript automatically assigns undefined to uninitialized variables.
@@ -766,7 +768,7 @@ TypeScript automatically assigns undefined to uninitialized variables.
 Can also be explicitly assigned.
 
 Example:
-
+```ts
 let b: undefined = undefined;
 console.log(b); // Output: undefined
 console.log(typeof b); // Output: undefined
@@ -780,6 +782,7 @@ function greet(name: string): void {
 }
 let result = greet("Alice");
 console.log(result); // Output: undefined
+```
 Key Differences Table
 Feature	null	undefined
 Meaning	Explicitly no value	Not initialized
@@ -790,15 +793,16 @@ Function Parameters	Explicitly no value	Missing or optional parameters
 Object Properties	Deliberately set to no value	May not be initialized
 Operational Handling	Must be handled in logic	Often handled with defaults
   # 5. Step-by-Step Data Modeling & Code Walkthrough
-User type with nullable and optional properties:
-
+###### User type with nullable and optional properties:
+```ts
 type User = {
   name: string;
   age: number | null;
   email?: string;
 };
-User with null and undefined properties:
-
+```
+##### User with null and undefined properties:
+```ts
 let user1: User = {
   name: "John Doe",
   age: null, // Explicitly no age
@@ -810,13 +814,15 @@ let user2: User = {
   age: 25
   // email is optional and thus undefined
 };
-Checking and handling values:
-
+```
+##### Checking and handling values:
+```ts
 function printUser(user: User): void {
   let ageInfo = user.age === null ? "Age not provided" : `Age: ${user.age}`;
   let emailInfo = user.email ? `Email: ${user.email}` : "Email not set";
   console.log(`${user.name} - ${ageInfo}, ${emailInfo}`);
 }
+```
 
 printUser(user1); // John Doe - Age not provided, Email: john@example.com
 printUser(user2); // Jane Doe - Age: 25, Email not set
